@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Audio Samples</title>
+  <style>
+body {
+  margin:0;
+  padding:10px 30px;
+  background: #fff;
+  color: #111;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 1.8;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+audio {
+  width: 100px;
+  margin-right: 10px;
+}
+.sample {
+  font-size: 0.9em;
+  font-style: italic;
+  border: 1px solid #ddd;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+thead > tr > th:first-child {
+  width: 96px;
+}
+
+</style>
+</head>
+<body>
+    <h2>Audio samples for paper: Personalized Cross-lingual Singing Voice Synthesis from Neutral Speech. </h2>
+
+  <div><b>Authors:</b> Yuewen Cao, Songxiang Liu, Shiyin Kang, Na Hu, Peng Liu, Xunying Liu, Dan Su, Dong Yu, Helen Meng</div>
+    <div><b>Abstract:</b> State-of-the-art singing voice synthesis (SVS) models can generate natural singing voice of a target speaker given his/her speaking voice in the same language. However, there may be challenging conditions where only speech data in a non-target language of the target speaker is available. In this paper, we explore the efficacy of using monolingual speech data for this cross-lingual SVS task. Given a target speaker’s speech in the non-target language (e. g. English), we build an SVS system that can synthesize his/her singing voice from musical scores in a target language (e. g. Mandarin Chinese). The proposed crosslingual SVS system contains four parts: a BLSTM based duration model, a pitch model, a cross-lingual acoustic model and a neural vocoder. The acoustic model employs encoder-decoder architecture conditioned on pitch, phoneme duration, speaker information and language information. An adversarially-trained speaker classifier is employed to discourage the text encodings from capturing speaker information. Objective evaluation and subjective listening tests demonstrate that the proposed crosslingual SVS system can generate singing voice with decent naturalness and fair speaker similarity. Adding multi-speaker speech data or singing data further improves generalization.</div>
+  <div><b>Corpora:</b> Multi-speaker English corpus VCTK, an internal multi-speaker Mandarin corpus and an internal Mandarin singing corpus.</div> 
+  
+<hr>
+
+    <h3>System Comparison</h3>
+  <p>
+* <b>Target speaker</b>: English speaker p261 from VCTK
+  
+    <div>
+    <table>
+    <tr><td> <strong>"System1"</strong>: The acoustic model is trained with English speech data from speaker p261 and Mandarin singing data from one singer.</td></tr> 
+    <tr><td> <strong>"System2"</strong>: The acoustic model is trained with English speech data from 109 speakers including speaker p261 and Mandarin speech data from 82 speakers.</td></tr>         
+    <tr><td> <strong>"System3"</strong>: The acoustic model is trained with English speech data from 109 speakers including speaker p261, Mandarin speech data from 82 speaker and Mandarin singing data from one singer. </td></tr>
+    </table>
+    </div>
+
+
+
+<p><b>Reference speech audio of English speaker p261:</b> </p>
+<!-- <p>wav1</p> -->
+<table style="width:60%">
+</table>
+      <table style="width:60%">
+      <tbody><tr>
+        <th>Groundtruth English speech audio </th>
+        <th>Synthesized Mandarin speech audio</th>
+      </tr>
+      <tr>
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/vctk_261019.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th> 
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/CN_261.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>     
+      </tr>
+      </tbody></table> 
+
+<br>
+<div><b>Notes:</b> All utterances below are Mandarin songs generated with English speaker p261's voice. </div> 
+
+
+<h3>Song1</h3>
+<p>wav1</p>
+<table style="width:70%">
+</table>
+      <table style="width:70%">
+      <tbody><tr>
+        <th>System1</th>
+        <th>System2</th>
+        <th>System3</th>
+      </tr>
+      <tr>
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/s1_xmj_0.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th> 
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/s2_xmj_0.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/s3_xmj_0.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>      
+      </tr>
+      </tbody></table>  
+ 
+<p>wav2</p>
+<table style="width:70%">
+</table>
+      <table style="width:70%">
+      <tbody><tr>
+        <th>System1</th>
+        <th>System2</th>
+        <th>System3</th>
+      </tr>
+      <tr>
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/s1_xmj_1.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th> 
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/s2_xmj_1.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/s3_xmj_1.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>      
+      </tr>
+      </tbody></table>  
+ 
+
+<p>wav3</p>
+<table style="width:70%">
+</table>
+      <table style="width:70%">
+      <tbody><tr>
+        <th>System1</th>
+        <th>System2</th>
+        <th>System3</th>
+      </tr>
+      <tr>
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/s1_xmj_2.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th> 
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/s2_xmj_2.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/s3_xmj_2.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>      
+      </tr>
+      </tbody></table>  
+
+
+<br> 
+<h3>Song2</h3>
+<p>wav1</p>
+<table style="width:70%">
+</table>
+      <table style="width:70%">
+      <tbody><tr>
+        <th>System1</th>
+        <th>System2</th>
+        <th>System3</th>
+      </tr>
+      <tr>
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/s1_qadlra_0.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th> 
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/s2_qadlra_0.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/s3_qadlra_0.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>      
+      </tr>
+      </tbody></table>  
+ 
+<p>wav2</p>
+<table style="width:70%">
+</table>
+      <table style="width:70%">
+      <tbody><tr>
+        <th>System1</th>
+        <th>System2</th>
+        <th>System3</th>
+      </tr>
+           <tr>
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/s1_qadlra_1.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th> 
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/s2_qadlra_1.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/s3_qadlra_1.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>      
+      </tr>
+      </tbody></table>  
+ 
+
+<p>wav3</p>
+<table style="width:70%">
+</table>
+      <table style="width:70%">
+      <tbody><tr>
+        <th>System1</th>
+        <th>System2</th>
+        <th>System3</th>
+      </tr>
+            <tr>
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/s1_qadlra_2.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th> 
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/s2_qadlra_2.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/s3_qadlra_2.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>      
+      </tr>
+      </tbody></table>  
+
+
+<br> 
+<h3>Song3</h3>
+<p>wav1</p>
+<table style="width:70%">
+</table>
+      <table style="width:70%">
+      <tbody><tr>
+        <th>System1</th>
+        <th>System2</th>
+        <th>System3</th>
+      </tr>
+      <tr>
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/s1_hszl_0.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th> 
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/s2_hszl_0.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/s3_hszl_0.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>      
+      </tr>
+      </tbody></table>  
+ 
+<p>wav2</p>
+<table style="width:70%">
+</table>
+      <table style="width:70%">
+      <tbody><tr>
+        <th>System1</th>
+        <th>System2</th>
+        <th>System3</th>
+      </tr>
+      <tr>
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/s1_hszl_1.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th> 
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/s2_hszl_1.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/s3_hszl_1.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>      
+      </tr>
+      </tbody></table>  
+ 
+
+<p>wav3</p>
+<table style="width:70%">
+</table>
+      <table style="width:70%">
+      <tbody><tr>
+        <th>System1</th>
+        <th>System2</th>
+        <th>System3</th>
+      </tr>
+      <tr>
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/s1_hszl_2.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th> 
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/s2_hszl_2.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/s3_hszl_2.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>      
+      </tr>
+      </tbody></table>  
+
+
+
+
+</body>
+</html>
