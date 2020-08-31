@@ -39,12 +39,10 @@ thead > tr > th:first-child {
 </style>
 </head>
 <body>
-    <h2>Audio samples for paper: Personalized Cross-lingual Singing Voice Synthesis from Neutral Speech. </h2>
+    <h2>Audio samples for paper: Exploring Cross-lingual Singing Voice Synthesis Using Speech Data. </h2>
 
 <!--   <div><b>Authors:</b> Yuewen Cao, Songxiang Liu, Shiyin Kang, Na Hu, Peng Liu, Xunying Liu, Dan Su, Dong Yu, Helen Meng</div> -->
-    <div><b>Abstract:</b> State-of-the-art singing voice synthesis (SVS) models can generate natural singing voice of a target speaker, given his/her speaking/singing data in the same language. However, there may be challenging conditions where only speech data in a non-target language of the target speaker is available. In this paper, we present a cross-lingual SVS system that can synthesize an English speaker's singing voice in Mandarin from musical scores with only her speech data in English. The presented cross-lingual SVS system contains four parts: a BLSTM based duration model, a pitch model, a cross-lingual acoustic model and a neural vocoder. The acoustic model employs encoder-decoder architecture conditioned on pitch, phoneme duration, speaker information and language information. An adversarially-trained speaker classifier is employed to discourage the text encodings from capturing speaker information. 
-Objective evaluation and subjective listening tests demonstrate that the proposed cross-lingual SVS system can generate singing voice with decent naturalness and fair speaker similarity. We also find that adding singing data or multi-speaker monolingual speech data further improves generalization on pronunciation and pitch accuracy.
-</div>
+    <div><b>Abstract:</b> State-of-the-art singing voice synthesis (SVS) models can generate natural singing voice of a target speaker, given his/her speaking/singing data in the same language. However, there may be challenging conditions where only speech data in a non-target language of the target speaker is available. In this paper, we present a cross-lingual SVS system that can synthesize an English speaker's singing voice in Mandarin from musical scores with only her speech data in English. The presented cross-lingual SVS system contains four parts: a BLSTM based duration model, a pitch model, a cross-lingual acoustic model and a neural vocoder. The acoustic model employs encoder-decoder architecture conditioned on pitch, phoneme duration, speaker information and language information. An adversarially-trained speaker classifier is employed to discourage the text encodings from capturing speaker information. Objective evaluation and subjective listening tests demonstrate that the proposed cross-lingual SVS system can generate singing voice with decent naturalness and fair speaker similarity. We also find that adding singing data or multi-speaker monolingual speech data further improves generalization on pronunciation and pitch accuracy. </div>
   <div><b>Corpora:</b> Multi-speaker English corpus VCTK, an internal multi-speaker Mandarin corpus and an internal Mandarin singing corpus.</div> 
   
 <hr>
@@ -58,6 +56,7 @@ Objective evaluation and subjective listening tests demonstrate that the propose
     <tr><td> <strong>"System1"</strong>: The acoustic model is trained with English speech data from speaker p261 and Mandarin singing data from one singer.</td></tr> 
     <tr><td> <strong>"System2"</strong>: The acoustic model is trained with English speech data from 109 speakers including speaker p261 and Mandarin speech data from 82 speakers.</td></tr>         
     <tr><td> <strong>"System3"</strong>: The acoustic model is trained with English speech data from 109 speakers including speaker p261, Mandarin speech data from 82 speaker and Mandarin singing data from one singer. </td></tr>
+    <tr><td> <strong>"Ablation"</strong>: The acoustic model has no speaker classifier and is trained with English speech data from 109 speakers including speaker p261, Mandarin speech data from 82 speaker. </td></tr>    
     </table>
     </div>
 
@@ -101,6 +100,7 @@ Objective evaluation and subjective listening tests demonstrate that the propose
         <th>System1</th>
         <th>System2</th>
         <th>System3</th>
+        <th>Ablation</th>
       </tr>
       <tr>
         <th>
@@ -120,7 +120,13 @@ Objective evaluation and subjective listening tests demonstrate that the propose
                   <source src="./wavs/s3_xmj_0.wav" type="audio/mpeg">
                 Your browser does not support the audio element.
                 </audio>
-        </th>      
+        </th>
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/ab_xmj_0.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>               
       </tr>
       </tbody></table>  
  
@@ -132,6 +138,7 @@ Objective evaluation and subjective listening tests demonstrate that the propose
         <th>System1</th>
         <th>System2</th>
         <th>System3</th>
+        <th>Ablation</th>
       </tr>
       <tr>
         <th>
@@ -151,7 +158,13 @@ Objective evaluation and subjective listening tests demonstrate that the propose
                   <source src="./wavs/s3_xmj_1.wav" type="audio/mpeg">
                 Your browser does not support the audio element.
                 </audio>
-        </th>      
+        </th>
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/ab_xmj_1.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>               
       </tr>
       </tbody></table>  
  
@@ -164,6 +177,7 @@ Objective evaluation and subjective listening tests demonstrate that the propose
         <th>System1</th>
         <th>System2</th>
         <th>System3</th>
+        <th>Ablation</th>
       </tr>
       <tr>
         <th>
@@ -183,7 +197,13 @@ Objective evaluation and subjective listening tests demonstrate that the propose
                   <source src="./wavs/s3_xmj_2.wav" type="audio/mpeg">
                 Your browser does not support the audio element.
                 </audio>
-        </th>      
+        </th>
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/ab_xmj_2.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>               
       </tr>
       </tbody></table>  
 
@@ -198,6 +218,7 @@ Objective evaluation and subjective listening tests demonstrate that the propose
         <th>System1</th>
         <th>System2</th>
         <th>System3</th>
+        <th>Ablation</th>
       </tr>
       <tr>
         <th>
@@ -217,7 +238,13 @@ Objective evaluation and subjective listening tests demonstrate that the propose
                   <source src="./wavs/s3_qadlra_0.wav" type="audio/mpeg">
                 Your browser does not support the audio element.
                 </audio>
-        </th>      
+        </th>
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/ab_qadlra_0.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>               
       </tr>
       </tbody></table>  
  
@@ -229,6 +256,7 @@ Objective evaluation and subjective listening tests demonstrate that the propose
         <th>System1</th>
         <th>System2</th>
         <th>System3</th>
+        <th>Ablation</th>
       </tr>
            <tr>
         <th>
@@ -248,7 +276,13 @@ Objective evaluation and subjective listening tests demonstrate that the propose
                   <source src="./wavs/s3_qadlra_1.wav" type="audio/mpeg">
                 Your browser does not support the audio element.
                 </audio>
-        </th>      
+        </th>
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/ab_qadlra_1.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>                
       </tr>
       </tbody></table>  
  
@@ -261,6 +295,7 @@ Objective evaluation and subjective listening tests demonstrate that the propose
         <th>System1</th>
         <th>System2</th>
         <th>System3</th>
+        <th>Ablation</th>
       </tr>
             <tr>
         <th>
@@ -280,7 +315,13 @@ Objective evaluation and subjective listening tests demonstrate that the propose
                   <source src="./wavs/s3_qadlra_2.wav" type="audio/mpeg">
                 Your browser does not support the audio element.
                 </audio>
-        </th>      
+        </th>
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/ab_qadlra_2.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>               
       </tr>
       </tbody></table>  
 
@@ -295,6 +336,7 @@ Objective evaluation and subjective listening tests demonstrate that the propose
         <th>System1</th>
         <th>System2</th>
         <th>System3</th>
+        <th>Ablation</th>
       </tr>
       <tr>
         <th>
@@ -314,7 +356,13 @@ Objective evaluation and subjective listening tests demonstrate that the propose
                   <source src="./wavs/s3_hszl_0.wav" type="audio/mpeg">
                 Your browser does not support the audio element.
                 </audio>
-        </th>      
+        </th>
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/ab_hszl_0.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>               
       </tr>
       </tbody></table>  
  
@@ -326,6 +374,7 @@ Objective evaluation and subjective listening tests demonstrate that the propose
         <th>System1</th>
         <th>System2</th>
         <th>System3</th>
+        <th>Ablation</th>
       </tr>
       <tr>
         <th>
@@ -345,7 +394,13 @@ Objective evaluation and subjective listening tests demonstrate that the propose
                   <source src="./wavs/s3_hszl_1.wav" type="audio/mpeg">
                 Your browser does not support the audio element.
                 </audio>
-        </th>      
+        </th>
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/ab_hszl_1.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>             
       </tr>
       </tbody></table>  
  
@@ -358,6 +413,7 @@ Objective evaluation and subjective listening tests demonstrate that the propose
         <th>System1</th>
         <th>System2</th>
         <th>System3</th>
+        <th>Ablation</th>
       </tr>
       <tr>
         <th>
@@ -377,7 +433,13 @@ Objective evaluation and subjective listening tests demonstrate that the propose
                   <source src="./wavs/s3_hszl_2.wav" type="audio/mpeg">
                 Your browser does not support the audio element.
                 </audio>
-        </th>      
+        </th>
+        <th>
+                <audio controls="" style="width: 300px;">
+                  <source src="./wavs/ab_hszl_2.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+        </th>               
       </tr>
       </tbody></table>  
 
